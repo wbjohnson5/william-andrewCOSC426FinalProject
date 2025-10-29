@@ -1,0 +1,8 @@
+text	label
+tweets - either political or non-political	bot
+the trainer does not need to know if tweets are political	human
+or non political. When we are evaluating, tweets will	human
+be labeled by type and results will be aggregated for each	bot
+of the three models for distilbert and distilgpt.	bot
+The training file will have have more training sentences	human
+then the validation file	bot
