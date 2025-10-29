@@ -1,1 +1,1 @@
-finish
+Given the NLPScholar output metrics of precision, recall, and accuracy for each model, we can sort results by model type (Distilgpt2 vs. Distilbert) and tweet type (political or non-political). Aggregating by those metrics, we can gather and organize the results for each model for both political and non-political tweets, organizing them into a data table to ultimately display in a paper or results presentation.
