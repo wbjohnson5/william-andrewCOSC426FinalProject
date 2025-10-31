@@ -1,0 +1,30 @@
+exp: TextClassification
+
+mode: 
+    - evaluate
+    - analyze
+
+models:
+    hf_text_classification_model:
+      - /home/ahatfield/finalproject/distilbert_political
+      - /home/ahatfield/finalproject/distilbert_non-political
+      - /home/ahatfield/finalproject/distilbert_combined
+      - /home/ahatfield/finalproject/distilgpt_political
+      - /home/ahatfield/finalproject/distilgpt_non-political
+      - /home/ahatfield/finalproject/distilgpt_combined
+
+
+predfpath: ./home/ahatfield/finalproject/predictions/predictions.tsv
+
+datafpath: /home/ahatfield/finalproject/data/evaluation.tsv
+
+resultsfpath: /home/ahatfield/finalproject/results/results.tsv
+
+id2label:
+    1: bot
+    0: human
+
+save: by_cond, by_target
+
+conditions: model, type
+

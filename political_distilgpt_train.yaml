@@ -1,0 +1,18 @@
+exp: TextClassification
+
+mode: 
+    - train
+
+models:
+    hf_text_classification_model:
+      - distilgpt2
+
+trainfpath: /home/ahatfield/finalproject/data/political_train.tsv
+
+validfpath: /home/ahatfield/finalproject/data/political_validation.tsv
+
+modelfpath: /home/ahatfield/finalproject/political_distilgpt_model
+
+numLabels: 2
+
+device: cuda
