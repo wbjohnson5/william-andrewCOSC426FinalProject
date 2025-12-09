@@ -1,0 +1,31 @@
+exp: TextClassification
+
+mode: 
+    - evaluate
+    - analyze
+
+models:
+    hf_text_classification_model:
+      - /home/ahatfield/finalproject/political_distilbert_model_randomized
+      - /home/ahatfield/finalproject/nonpolitical_distilbert_model_randomized
+      - /home/ahatfield/finalproject/combined_distilbert_model_randomized
+      - /home/ahatfield/finalproject/political_distilgpt_model_randomized
+      - /home/ahatfield/finalproject/nonpolitical_distilgpt_model_randomized
+      - /home/ahatfield/finalproject/combined_distilgpt_model_randomized
+
+
+predfpath: /home/ahatfield/finalproject/predictions/predictions_randomized.tsv
+
+datafpath: /home/ahatfield/finalproject/data/evaluation_randomized.tsv
+
+resultsfpath: /home/ahatfield/finalproject/results/results_randomized.tsv
+
+id2label:
+    1: human
+    0: bot
+
+save: by_cond, by_target, by_textid
+
+conditions: model, type
+
+device: cuda
