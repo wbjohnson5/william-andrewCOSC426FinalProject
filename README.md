@@ -1,4 +1,4 @@
-# Identifying Bot Tweets: Political Nonpolitical Contexts
+# Identifying Bot Tweets: Political and Nonpolitical Contexts
 by William Johnson and Andrew Hatfield
 
 This repository provides the data files (of tweets), configuration files to run the experiments with NLP Scholar, scripts to run the config files with Turing, and associated results files.
